@@ -46,7 +46,7 @@ class UsersController extends Controller
     {
         $this->validate($request, [
             'name' => 'required|max:50',
-            'password' => 'required|confirmed|min:6'
+            'password' => 'nullable|confirmed|min:6'
         ]);
 
         $data = [];
