@@ -11008,3 +11008,10 @@ section.user_info h1 {
   max-width: 100px;
 }
 
+/* Home */
+
+.static-home {
+  display: flex;
+  justify-content: space-around;
+}
+
