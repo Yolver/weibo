@@ -113,7 +113,7 @@ class UsersController extends Controller
         $user->activation_token = null;
         $user->save();
 
-        Auth::logout($user);
+        Auth::login($user);
         session()->flash('success','恭喜你，激活成功');
         return redirect()->route('users.show',[$user]);
     }
